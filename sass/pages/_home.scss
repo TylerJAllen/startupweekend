@@ -1,3 +1,13 @@
+*,*:before, *:after {
+  @include border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, html, body {
+  font-family: sans-serif;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -8,29 +18,37 @@
 //   text
 // }
 
+.introduction, .schedule {
+  background-color: $background-color1;
+}
+
+.numbers {
+  background-color: $background-color2;
+}
+
 section:after {
   content: "";
   display: table;
   clear: both;
 }
 
-@media (min-width: 1500px) {
-  .container {
-    width: 1280px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+@media (min-width: 1500px) {
+    .container {
+      width: 1280px;
+    }
   }
 }
