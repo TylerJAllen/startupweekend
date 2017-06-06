@@ -12,9 +12,23 @@
   height: 80px;
 }
 
+.form-nav {
+  border: 1px dashed yellow;
+}
 .nav-logo {
   float: left;
 }
+
+.button-nav {
+  background-color: green;
+  border: none;
+}
+
+// .button-nav img {
+//   padding: 2px 2px 0px 0px;
+//   height: 15px;
+//   width: 15px;
+// }
 
 .nav-list li {
   float: right;

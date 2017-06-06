@@ -1,0 +1,26 @@
+@for $i from 1 through $grid-columns {
+  .col-mobile-#{$i} {
+   width: 100% / $grid-columns * $i;
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 1 through $grid-columns {
+    .col-tablet-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+@media (min-width: 992px) {
+  @for $i from 1 through $grid-columns {
+    .col-desktop-#{$i} {
+     width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 0px 15px;
+  position: relative;
+}
