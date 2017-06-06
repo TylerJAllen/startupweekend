@@ -8,15 +8,24 @@
   color: #fff;
   background-color: green;
   border: 1px solid red;
-  overflow: auto;
   height: 80px;
 }
 
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .form-nav {
   border: 1px dashed yellow;
 }
 .nav-logo {
   float: left;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: 100px;
 }
 
 .button-nav {

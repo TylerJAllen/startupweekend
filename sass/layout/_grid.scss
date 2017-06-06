@@ -4,14 +4,17 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width:$breakpoint-mobile) {
   @for $i from 1 through $grid-columns {
     .col-tablet-#{$i} {
       width: 100% / $grid-columns * $i;
     }
   }
+  .numbers-columns {
+    text-align: left;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width:$breakpoint-tablet) {
   @for $i from 1 through $grid-columns {
     .col-desktop-#{$i} {
      width: 100% / $grid-columns * $i;
@@ -23,4 +26,9 @@
   float: left;
   padding: 0px 15px;
   position: relative;
+  border: 1px solid red;
+}
+
+.numbers-columns {
+  height: 80px;
 }

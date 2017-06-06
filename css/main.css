@@ -10,8 +10,13 @@
   color: #fff;
   background-color: green;
   border: 1px solid red;
-  overflow: auto;
   height: 80px;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .form-nav {
@@ -20,6 +25,11 @@
 
 .nav-logo {
   float: left;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: 100px;
 }
 
 .button-nav {
@@ -134,6 +144,10 @@ ul {
   .col-tablet-12 {
     width: 100%;
   }
+
+  .numbers-columns {
+    text-align: left;
+  }
 }
 @media (min-width: 992px) {
   .col-desktop-1 {
@@ -188,6 +202,11 @@ ul {
   float: left;
   padding: 0px 15px;
   position: relative;
+  border: 1px solid red;
+}
+
+.numbers-columns {
+  height: 80px;
 }
 
 .hero {
@@ -225,6 +244,13 @@ span {
 .container {
   margin: 0 auto;
   padding: 0 15px;
+  text-align: center;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (min-width: 1500px) {
