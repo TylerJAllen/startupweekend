@@ -1,3 +1,33 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
+.header {
+  color: #fff;
+  background-color: green;
+  border: 1px solid red;
+  overflow: auto;
+  height: 80px; }
+
+.nav-logo {
+  float: left; }
+
+.nav-list li {
+  float: right;
+  list-style: none;
+  float: left;
+  letter-spacing: 1px; }
+
+ul {
+  float: right; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /*# sourceMappingURL=main.css.map */
